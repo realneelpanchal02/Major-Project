@@ -20,10 +20,6 @@ const reviewsRouter = require("./models/reviews.js");
 const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
-// MongoDB connection
-mongoose.connect('mongodb://wanderlust635:9181Nl333@localhost:3000/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected...'))
-  .catch(err => console.log(err));
 main()
   .then(() => {
     console.log("Successfully connected to DB");
