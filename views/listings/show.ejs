@@ -153,21 +153,4 @@
     </div>
     <%}%>
   </div>
-  <div class="col-8 offset-3 mb-3">
-    <h3>Whrer you'll be</h3>
-    <div id="map"></div>
-  </div>
-</div>
-
-<script>
-  let mapToken = "<%= process.env.HERE_TOKEN%>";
-  // TO MAKE THE MAP APPEAR YOU MUST
-  // ADD YOUR ACCESS TOKEN FROM
-  // https://account.mapbox.com
-  mapboxgl.accessToken = mapToken;
-  const map = new mapboxgl.Map({
-    container: "map", // container ID
-    center: [-74.5, 40], // starting position [lng, lat]
-    zoom: 9, // starting zoom
-  });
-</script>
+  
